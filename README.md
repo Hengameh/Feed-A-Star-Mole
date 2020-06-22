@@ -27,3 +27,5 @@ Please feel free to play with the timing. In this version I used the following t
 - Moles wait at least two seconds before showing up in the same hole and no more than twenty seconds.
 
 You can grab all the static images [here](https://frontendmasters.github.io/bootcamp/mole.zip)
+
+Licensed under the [MIT License](LICENSE)

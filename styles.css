@@ -1,0 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    cursor: url(./cursor.png), default;
+}

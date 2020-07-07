@@ -76,6 +76,7 @@ const moles = [
 function getNextStatus (mole) {
     switch (mole.status){
         case "sad":
+        case "fed":
             mole.next = getSadInterval();
             mole.status = "leaving";
             mole.node.children[0].src = './images/mole-leaving.png';
@@ -106,7 +107,12 @@ function feed(event){
     !event.target.classList.contains("hungry")){
         return;
     }
-    //console.log(event.target);
+    
+    const mole = moles[parseInt(event.target.dataset.index)];
+    mole.status = 'fed';
+    mole.next = getSadInterval();
+    mole.node.children[0].src = './images/mole-fed.png';
+    mole.node.children[0].classList.remove("hungry");
 }
 
 let runAgainAt = Date.now() + 100;

@@ -1,4 +1,5 @@
-# Feed A Star Mole Game
+# Feed A Star Mole Game 
+###### Browser-based game, written in HTML5, CSS3, and JavaScript
 
 [![Demo Web Feed A Star Mole Game](./images/demo.jpg)](https://hengameh.github.io/Feed-A-Star-Mole/)
 

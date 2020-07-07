@@ -1,5 +1,7 @@
 # Feed A Star Mole Game
-This Excercise developed by [Brian Holt](https://frontendmasters.com/teachers/brian-holt/)
+**Demo:** https://hengameh.github.io/Feed-A-Star-Mole/
+[![Demo Web Feed A Star Mole Game](demo.png)](https://hengameh.github.io/Feed-A-Star-Mole/)
+
 
 ## Introduction
 The idea is that little moles will pop out of holes and the game is to tap them before they go back in their holes. In our variant, they're hungry little star moles and we're going to feed them worms! After a user gets 10 points, they win the game! There are also more-rare royal star moles that are worth double. If a user doesn't click on a mole in time, the mole frowns and heads back in its hole. If you manage to feed it in time, it smiles happily and disappers back into its hole.
@@ -27,5 +29,6 @@ Please feel free to play with the timing. In this version I used the following t
 - Moles wait at least two seconds before showing up in the same hole and no more than twenty seconds.
 
 You can grab all the static images [here](https://frontendmasters.github.io/bootcamp/mole.zip)
+This Excercise developed by [Brian Holt](https://frontendmasters.com/teachers/brian-holt/)
 
 Licensed under the [MIT License](LICENSE)

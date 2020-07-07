@@ -55,3 +55,15 @@ body{
     display: none;
 }
 
+.worm {
+    width: 1660px;
+}
+
+.worm-container {
+    overflow: hidden;
+    transition: width 0.5 ease-in-out;
+}
+
+.worm-box {
+    width: 1660px;
+}

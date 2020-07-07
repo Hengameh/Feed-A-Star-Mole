@@ -89,10 +89,11 @@ function getNextStatus (mole) {
         case "gone":
             mole.status = 'hungry';
             mole.next = getHungryInterval();
-            mole.node.children[0].classList.add("gone");
+            mole.node.children[0].classList.remove("gone");
             mole.node.children[0].classList.add("hungry");
             mole.node.children[0].src = './images/mole-hungry.png';
             break;
+        
     }
 }
 

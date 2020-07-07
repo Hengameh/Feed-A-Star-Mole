@@ -75,13 +75,19 @@ function getNextStatus (mole) {
         case "sad":
             mole.next = getSadInterval();
             mole.status = "leaving";
-            mole.node.src = './mole-leaving.png';
+            mole.node.children[0].src = './images/mole-leaving.png';
             break;
         case "leaving":
             mole.next = getGoneInterval();
             mole.status = 'gone';
             mole.node.children[0].classList.add("gone");
             break;
+        case "gone":
+            mole.status = 'hungry';
+            mole.next = getHungryInterval();
+            mole.node.children[0].classList.add("gone");
+            mole.node.children[0].classList.add("hungry");
+            mole.node.children[0].src = './images/mole-hungry.png';
     }
 }
 

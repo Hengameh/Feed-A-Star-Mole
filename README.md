@@ -1,6 +1,7 @@
 # Feed A Star Mole Game
 **Demo:** https://hengameh.github.io/Feed-A-Star-Mole/
-[![Demo Web Feed A Star Mole Game](demo.png)](https://hengameh.github.io/Feed-A-Star-Mole/)
+
+[![Demo Web Feed A Star Mole Game](./images/demo.jpg)](https://hengameh.github.io/Feed-A-Star-Mole/)
 
 
 ## Introduction

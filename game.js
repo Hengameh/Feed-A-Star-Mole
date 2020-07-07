@@ -6,6 +6,10 @@ function getGoneInterval(){
     return Date.now() + Math.floor(Math.random() * 18000) + 2000;
 }
 
+function getHungryInterval(){
+    return Date.now() + Math.floor(Math.random() * 3000) + 2000; //Gives us a number anywhere between 2000 to 5000
+}
+
 const moles = [
     {
         status: "sad",
@@ -88,6 +92,7 @@ function getNextStatus (mole) {
             mole.node.children[0].classList.add("gone");
             mole.node.children[0].classList.add("hungry");
             mole.node.children[0].src = './images/mole-hungry.png';
+            break;
     }
 }
 

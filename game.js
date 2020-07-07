@@ -13,7 +13,7 @@ function getHungryInterval(){
 }
 
 function getKingStatus(){
-    return Math.random() > 0.9;  // 10% of the time it comes back as ture & 90% as false
+    return Math.random() > 0.9;
 }
 
 const moles = [
@@ -122,8 +122,7 @@ function getNextStatus (mole) {
 }
 
 function feed(event){
-    if (event.target.tagName !== 'IMG' || 
-    !event.target.classList.contains("hungry")){
+    if (!event.target.classList.contains("hungry")){
         return;
     }
     

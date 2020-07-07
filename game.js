@@ -7,7 +7,7 @@ function getGoneInterval(){
 }
 
 function getHungryInterval(){
-    return Date.now() + Math.floor(Math.random() * 3000) + 2000; //Gives us a number anywhere between 2000 to 5000
+    return Date.now() + Math.floor(Math.random() * 3000) + 2000;
 }
 
 const moles = [
@@ -70,8 +70,7 @@ const moles = [
         next: getSadInterval(),
         king: false,
         node: document.getElementById('hole-9')
-    }
-    
+    }   
 ];
 
 function getNextStatus (mole) {
@@ -102,6 +101,14 @@ function getNextStatus (mole) {
     }
 }
 
+function feed(event){
+    if (event.target.tagName !== 'IMG' || 
+    !event.target.classList.contains("hungry")){
+        return;
+    }
+    //console.log(event.target);
+}
+
 let runAgainAt = Date.now() + 100;
 function nextFrame() {
     const now = Date.now();
@@ -116,5 +123,7 @@ function nextFrame() {
     }
     requestAnimationFrame(nextFrame);
 }
+
+document.querySelector('.bg').addEventListener('click', feed);
 
 nextFrame();
